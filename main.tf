@@ -24,7 +24,7 @@ module vpc {
 
   # Additional tags for the public subnets
   public_subnet_tags = {
-    Name = "public_sn"
+    Name = "pov_public"
   }
 
   # A map of tags to add to all resources
