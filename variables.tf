@@ -19,9 +19,11 @@ variable "vpc_name" {
 variable "public_subnets" {
   description = "A list public subnet cidr blocks"
   type        = "list"
+  default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
 
 variable "private_subnets" {
   description = "A list private subnets the vault cluster will be deployed into"
   type        = "list"
+  default     = ["10.0.10.0/24", "10.0.20.0/24", "10.0.30.0/24"]
 }
